@@ -26,8 +26,9 @@ public class Main {
         Slytherin dracoMalfoi = new Slytherin("Драко Малфой", 35, 50, 4, 5, 7, 4, 10);
         Slytherin grahamMontegu = new Slytherin("Грэхэм Монтегю", 30, 40, 5, 3, 5, 3, 5);
         Slytherin gregoriGoil = new Slytherin("Грегори Гойл", 33, 43, 3, 5, 6, 4, 5);
-Gryffindor.studentComparison(harryPotter, ronYizli);
-
+        Gryffindor.studentComparison(harryPotter, ronYizli);
+        hogwarts.studentComparison(dracoMalfoi, markusBelbi);
+        System.out.println(harryPotter.toString());
 
     }
 }

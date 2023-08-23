@@ -22,6 +22,7 @@ public class Hufflepuff extends hogwarts {
     public int getHonest() {
         return honest;
     }
+
     public static void studentComparison(Hufflepuff student1, Hufflepuff student2) {
         int sumOfTalants = student1.getHardworking() + student1.getHonest() + student1.getLoyal();
         int sumOfTalants1 = student2.getHardworking() + student2.getHonest() + student2.getLoyal();
@@ -36,9 +37,16 @@ public class Hufflepuff extends hogwarts {
 
     public void studentDescription() {
         System.out.println("Имя " + getName() + ", Cила колдовства " + getPowerMagic() +
-                ", Сила Трансгрессии " + getPowerTransgression()+ ", Трудолюбие " + getHardworking() +
-                ", Верность "+ getLoyal() + ", Честность "+ getHonest());
+                ", Сила Трансгрессии " + getPowerTransgression() + ", Трудолюбие " + getHardworking() +
+                ", Верность " + getLoyal() + ", Честность " + getHonest());
     }
 
-
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", Трудолюбие " + hardworking +
+                ", Верность " + loyal +
+                ", Честность " + honest
+                ;
+    }
 }

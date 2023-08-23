@@ -24,6 +24,7 @@ public class Gryffindor extends hogwarts {
     public int getBravery() {
         return bravery;
     }
+
     public static void studentComparison(Gryffindor student1, Gryffindor student2) {
         int sumOfTalants = student1.getBravery() + student1.getNobility() + student1.getHonor();
         int sumOfTalants1 = student2.getBravery() + student2.getNobility() + student2.getHonor();
@@ -42,4 +43,13 @@ public class Gryffindor extends hogwarts {
                 ", Сила Трансгрессии " + getPowerTransgression() + ", Благородство " + getNobility() + ", Честь "
                 + getHonor() + ", Храбрость " + getBravery());
     }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", Благородство " + nobility +
+                ", Честь " + honor +
+                ", Храбрость " + bravery;
+    }
 }
+

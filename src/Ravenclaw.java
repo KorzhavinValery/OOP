@@ -32,6 +32,7 @@ public class Ravenclaw extends hogwarts {
     public int getCreativity() {
         return creativity;
     }
+
     public static void studentComparison(Ravenclaw student1, Ravenclaw student2) {
         int sumOfTalants = student1.getSmart() + student1.getWise() + student1.getWitty();
         int sumOfTalants1 = student2.getSmart() + student2.getWise() + student2.getWitty();
@@ -43,11 +44,21 @@ public class Ravenclaw extends hogwarts {
                     " сильнее, чем " + student1.getName());
         }
     }
-@Override
+
+    @Override
     public void studentDescription() {
-    System.out.println("Имя " + getName() + ", Cила колдовства " + getPowerMagic() +
-            ", Сила Трансгрессии " + getPowerTransgression() + ", Ум " + getSmart() +
-            ", Мудрость " +  getWise() + ", Остроумие " +
-            getWitty() +", Креативность " + getCreativity());
+        System.out.println("Имя " + getName() + ", Cила колдовства " + getPowerMagic() +
+                ", Сила Трансгрессии " + getPowerTransgression() + ", Ум " + getSmart() +
+                ", Мудрость " + getWise() + ", Остроумие " +
+                getWitty() + ", Креативность " + getCreativity());
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", Ум " + smart +
+                ", Мудрость " + wise +
+                ", Остроумие " + witty +
+                ", Креативность " + creativity;
     }
 }
