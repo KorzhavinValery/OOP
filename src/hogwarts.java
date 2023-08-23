@@ -13,23 +13,12 @@ public class hogwarts {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getPowerMagic() {
         return powerMagic;
-    }
-
-    public void setPowerMagic(int powerMagic) {
-        this.powerMagic = powerMagic;
     }
 
     public int getPowerTransgression() {
         return powerTransgression;
     }
 
-    public void setPowerTransgression(int powerTransgression) {
-        this.powerTransgression = powerTransgression;
-    }
 }
