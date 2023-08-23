@@ -20,5 +20,17 @@ public class hogwarts {
     public int getPowerTransgression() {
         return powerTransgression;
     }
+    public void studentDescription() {
+        System.out.println("Имя - " + name + ", Сила Магии " + getPowerMagic() +
+                ", Сила Трансгрессии " + getPowerTransgression());
+    }
 
+
+    @Override
+    public String toString() {
+        return
+                "Имя " + name + '\'' +
+                ", Сила  " + powerMagic +
+                ", Сила Трансгрессии " + powerTransgression;
+    }
 }

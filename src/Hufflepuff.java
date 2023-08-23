@@ -22,5 +22,23 @@ public class Hufflepuff extends hogwarts {
     public int getHonest() {
         return honest;
     }
+    public static void studentComparison(Hufflepuff student1, Hufflepuff student2) {
+        int sumOfTalants = student1.getHardworking() + student1.getHonest() + student1.getLoyal();
+        int sumOfTalants1 = student2.getHardworking() + student2.getHonest() + student2.getLoyal();
+        if (sumOfTalants > sumOfTalants1) {
+            System.out.println("Студент Пуффендуй " + student1.getName() +
+                    " сильнее, чем " + student2.getName());
+        } else {
+            System.out.println("Студент Пуффендуй " + student2.getName() +
+                    " сильнее, чем " + student1.getName());
+        }
+    }
+
+    public void studentDescription() {
+        System.out.println("Имя " + getName() + ", Cила колдовства " + getPowerMagic() +
+                ", Сила Трансгрессии " + getPowerTransgression()+ ", Трудолюбие " + getHardworking() +
+                ", Верность "+ getLoyal() + ", Честность "+ getHonest());
+    }
+
 
 }
